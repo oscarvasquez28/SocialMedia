@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* para resetear los valores de todo */
+
+#titulo{
+    color:rgb(255, 255, 255);
+    width:max-content;
+}
+/* # se utiliza para referenciar el nombre de un id*/
+.header{
+    background-color: black;
+    /* background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 77%, rgba(255,255,255,1) 100%); */
+
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40%;
+    
+}
+
+.barra{
+    background-color: black;
+    /* background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 77%, rgba(255,255,255,1) 100%); */
+    padding: 10px;
+    
+}
+
+.navegacion{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 5px 10%; */
+    padding: 5px;
+}
+
+.navegacion li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navegacion li:hover{
+    transform: scale(1.1);
+}
+
+.navegacion li a:hover{
+    color: red;
+}
+
+.nombres{
+    color:slateblue;
+}
+
+/* . se utiliza para referenciar el nombre de una clase*/
+
+.noticias{
+    /* border: 5px rgb(174, 0, 255) outset; */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+ 
+    border-style: outset;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-width: 5px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 40%;
+    /* width:max-content; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.Post{
+    margin-left: 30px;
+}
+
+
