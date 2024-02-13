@@ -2,34 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>tilinblog</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Feik</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body style="background-color:aquamarine;">
-    
-    <h1>Dobeto no es gei</h1>
-    <img src="https://th.bing.com/th/id/R.28a739ba3dd31d8add5fe3c046a51a48?rik=%2bb8HjZ6hVzGCTw&pid=ImgRaw&r=0" alt="miku" width="250" height="300">
-    <hr>
-    <p>YO SIEMPRE ME MALTRATOOO</p>
-    <P>VIENDO TUS VIDEOS Y TUS RETRATOS</P>
-    <P>DILE A TU NOVIO QUE YA SE LE VENCIÓ EL CONTRATOO</P>
-    <p>Es una cancion*</p>
-    <table>
-        <Tr>
-                <th>Amigos</th>
-                <th>Enemigos</th>
-                <th>Mis reales</th>
-        </Tr>
-        <tr>
-            <td>No hay</td>
-            <td>No tengo</td>
-            <td>YO</td>
-        </tr>
+<body>
+    <header class="header">
+        <!--Esto es prueba-->
+        <h1 id="titulo">Facebook Feik</h1>
+    </header>
+    <nav class="barra">
+        <ul class="navegacion">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            
+        </ul>
+    </nav>
+    <h2 class="noticias">Sección de noticias</h2>
+    <section class="Post">
+        <article>
+            <p>Primer funado: </p>
+            <!--<p>1. <span style ="color:blue" >Dobeto</span></p>-->
+            <p>1. <span class="nombres">Dobeto </span></p>
+            <!-- span para poder identificar la etiqueta de html dentro de otras-->
+            <p>Me quiso bajar a mi novia <br>Mai Sakurajima </p>
+            <!-- etiqueta br para forzar un salto de linea-->
 
-    </table>
+            <a target = "_blank" href ="https://youtu.be/AcubGZxErto?si=ZzTMzOsx17OAO9sp">Escuchar Fukashigi no carte completa<br></a>
+            <!-- la etiqueta a nos permite navegar-->
+            <!-- con href podemos agregar un hipervinculo de la web-->
+            <!-- con target = "_blank" abrimos el hipervinculo en otra pagina del navegador-->
+            <img src = "https://ramenparados.com/wp-content/uploads/2018/08/Seishun-Buta-Yarou-key-destacado-1000x600.jpg" width="250"/>
+            <!-- con img podemos agregar una imagen, ya sea poniendo un link de la web o una imagen que esté en nuestro computador-->
+            <!-- height par altura y width para anchura-->
+        </article>
+
+        <form action="/formulario" method="post"> 
+            <!-- indicamos a donde se envian los datos y mediante que metodo-->
+            <label for="opinion">Opiniones de la canción</label>
+            <input type="text" id = "opinion" name="opinion" placeholder="Escribe algo..."/>
+            <!-- le ponemos un indicador para que no seleccione el texto y se vaya al campo-->
+            <!-- con type especificamos de qué manera se va a comportar el input-->
+            <br>
+            <input type="submit"/>
+            <button type="button">Button</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <!--3 tipos de button, "button, reset, submit"-->
+        </form>
+        <!--con id solo seleccionas un elemento-->
+        <!--con class seleccionas a más de uno-->
+    </section>
     <hr>
-    <input type="text">
-    <input class="styled" type="button" value="Add to favorites" />
+    <footer>
+        <a href="mailto:oscar.vasquezot@uanl.edu.mx">Contáctame aquí</a>
+        <!--para poner información de contacto, al seleccionar se puede enviar un correo-->
+        <br>
+        <a href="#titulo">Ir al inicio</a>
+        <!--Podemos indicar un atributo de id para que la página vaya a esa sección-->
+        <p>©2024. All rights reserved.</p>
+    </footer>
 </body>
 </html>
