@@ -3,64 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Feik</title>
+    <title>Twitter fake</title>
     <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="style.css">
 </head>
 <body>
     <header class="header">
-        <!--Esto es prueba-->
-        <h1 id="titulo">Facebook Feik</h1>
+        <nav>
+            <div class="nav-left">
+                <!--Esto es prueba-->
+                <a href="index.html" id="titulo"><h1>S E E K</h1></a>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="img/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+                <ul>
+                    <li><a href="configuracion.html"><img src="img/setting.png"></a></li>
+                    <li><img src="img/logout.png"></li>
+                </ul>
+                <div class="nav-user-icon online">
+                    <a href="perfil.html"><img src="img/profile.png"></a>
+                </div>
+
+            </div>
+        </nav>
     </header>
-    <nav class="barra">
-        <ul class="navegacion">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="configuracion.html">Configuración</a></li>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="secciones">
+                <a href="#" ><img src="img/friends2.png">Amigos</a>
+                <a href="#" ><img src="img/watch2.png">Entretenimiento</a>
+                <a href="#" ><img src="img/marketplace2.png">Ventas</a>
+                <a href="#" ><img src="img/news2.png">Noticias</a>
+                <a href="#">See more</a>
+            </div>
+        </div>
+        <div class="main-content">
+
+           <div class="write-post-container">
+            <div class="user-profile">
+                <img src="img/profile.png">
+                <div>
+                    <p>Oscar Vasquez</p>
+                    <small>Public </small>
+                </div>
+            </div>
+
+            <div class="post-input-container">
+                <textarea rows="3" placeholder="What's on your mind, Oscar?"></textarea>
+                <div class="add-post-links">
+                    <a href="#"><img src="img/photo.png">Photo Video</a>
+                    <a href="#"><img src="img/feeling.png">Feeling/Activity</a>
+                </div>
             
-        </ul>
-    </nav>
-    <h2 class="noticias">Sección de noticias</h2>
+            </div>
+
+           </div>
+           <div class="post-container">
+                <div class="user-profile">
+                    <img src="img/profile.png">
+                    <div>
+                        <p>Oscar Vasquez</p>
+                        <span>February 12 2024, 02:04 am</span>
+                    </div>
+                </div>
+                <p class="post-text">Subscribe <span>@Dobetoons</span> Youtube Channel <a href="#">#Dobetiktok</a></p>
+           </div>
+        </div>
+        <div class="right-sidebar">
+            <p>right-sidebar</p>
+            <br>
+            <p>Artículos</p>
+            <br>
+            <ul>
+                <li><p>Articulo 1</p></li>
+                <li><p>Articulo 2</p>></li>
+            </ul>
+        </div>
+    </div>
+
     <section class="Post">
         <article>
-            <p>Primer funado: </p>
-            <!--<p>1. <span style ="color:blue" >Dobeto</span></p>-->
-            <p>1. <span class="nombres">Dobeto </span></p>
-            <!-- span para poder identificar la etiqueta de html dentro de otras-->
-            <p>Me quiso bajar a mi novia <br>Mai Sakurajima </p>
-            <!-- etiqueta br para forzar un salto de linea-->
 
-            <a target = "_blank" href ="https://youtu.be/AcubGZxErto?si=ZzTMzOsx17OAO9sp">Escuchar Fukashigi no carte completa<br></a>
-            <!-- la etiqueta a nos permite navegar-->
-            <!-- con href podemos agregar un hipervinculo de la web-->
-            <!-- con target = "_blank" abrimos el hipervinculo en otra pagina del navegador-->
-            <img src = "https://ramenparados.com/wp-content/uploads/2018/08/Seishun-Buta-Yarou-key-destacado-1000x600.jpg" width="250"/>
-            <!-- con img podemos agregar una imagen, ya sea poniendo un link de la web o una imagen que esté en nuestro computador-->
-            <!-- height par altura y width para anchura-->
         </article>
 
-        <form action="/formulario" method="post"> 
-            <!-- indicamos a donde se envian los datos y mediante que metodo-->
-            <label for="opinion">Opiniones de la canción</label>
-            <input type="text" id = "opinion" name="opinion" placeholder="Escribe algo..."/>
-            <!-- le ponemos un indicador para que no seleccione el texto y se vaya al campo-->
-            <!-- con type especificamos de qué manera se va a comportar el input-->
-            <br>
-            <input type="submit"/>
-            <button type="button">Button</button>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-            <!--3 tipos de button, "button, reset, submit"-->
-        </form>
-        <!--con id solo seleccionas un elemento-->
-        <!--con class seleccionas a más de uno-->
     </section>
-    <hr>
+
     <footer>
         <a href="mailto:oscar.vasquezot@uanl.edu.mx">Contáctame aquí</a>
         <!--para poner información de contacto, al seleccionar se puede enviar un correo-->
         <br>
-        <a href="#titulo">Ir al inicio</a>
-        <!--Podemos indicar un atributo de id para que la página vaya a esa sección-->
         <p>©2024. All rights reserved.</p>
     </footer>
 </body>
