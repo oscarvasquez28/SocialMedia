@@ -3,102 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter fake</title>
-    <link rel="stylesheet" href="style.css"/>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelog.css"/>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <div class="nav-left">
-                <!--Esto es prueba-->
-                <a href="index.html" id="titulo"><h1>S E E K</h1></a>
-            </div>
-            <div class="nav-right">
-                <div class="search-box">
-                    <img src="img/search.png">
-                    <input type="text" placeholder="Search">
-                </div>
-                <ul>
-                    <li><a href="configuracion.html"><img src="img/setting.png"></a></li>
-                    <li><img src="img/logout.png"></li>
-                </ul>
-                <div class="nav-user-icon online">
-                    <a href="perfil.html"><img src="img/profile.png"></a>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <div class="left-sidebar">
-            <div class="secciones">
-                <a href="#" ><img src="img/friends2.png">Amigos</a>
-                <a href="#" ><img src="img/watch2.png">Entretenimiento</a>
-                <a href="#" ><img src="img/marketplace2.png">Ventas</a>
-                <a href="#" ><img src="img/news2.png">Noticias</a>
-                <a href="#">See more</a>
-            </div>
+    <div class="contenido">
+        <div class="nombrepag">
+        <h1>S E E K</h1>
         </div>
-        <div class="main-content">
-
-           <div class="write-post-container">
-            <div class="user-profile">
-                <img src="img/profile.png">
-                <div>
-                    <p>Oscar Vasquez</p>
-                    <small>Public </small>
+        <section>
+            <form action="inicio.html" method="get"> 
+                <!-- method="post" -->
+                <h1>Log in</h1>
+                <div class="inputbox">
+                    <input type="email" autofocus required>
+                    <label for="">Email</label>
                 </div>
-            </div>
-
-            <div class="post-input-container">
-                <textarea rows="3" placeholder="What's on your mind, Oscar?"></textarea>
-                <div class="add-post-links">
-                    <a href="#"><img src="img/photo.png">Photo Video</a>
-                    <a href="#"><img src="img/feeling.png">Feeling/Activity</a>
+                <div class="inputbox">
+                    <input type="password" required>
+                    <label for="">Password</label>
                 </div>
-            
-            </div>
-
-           </div>
-           <div class="post-container">
-                <div class="user-profile">
-                    <img src="img/profile.png">
-                    <div>
-                        <p>Oscar Vasquez</p>
-                        <span>February 12 2024, 02:04 am</span>
-                    </div>
+                <div class="forget">
+                    <label for="" >
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#">Forget Password</a>
                 </div>
-                <p class="post-text">Subscribe <span>@Dobetoons</span> Youtube Channel <a href="#">#Dobetiktok</a></p>
-           </div>
-        </div>
-        <div class="right-sidebar">
-            <p>right-sidebar</p>
-            <br>
-            <p>Artículos</p>
-            <br>
-            <ul>
-                <li><p>Articulo 1</p></li>
-                <li><p>Articulo 2</p>></li>
-            </ul>
-        </div>
+
+                <input type="submit" name="" value="Log In"id="btn">
+
+                <!-- <button type="submit" value="submit">
+                    <a href="index.html">Log In</a>
+                </button> -->
+                
+                <div class="register">
+                    <p>Don't have an Account
+                        <a href="">Register</a>
+                    </p>
+                </div>
+            </form>
+        </section>
     </div>
-
-    <section class="Post">
-        <article>
-
-        </article>
-
-    </section>
-
-    <footer>
-        <a href="mailto:oscar.vasquezot@uanl.edu.mx">Contáctame aquí</a>
-        <!--para poner información de contacto, al seleccionar se puede enviar un correo-->
-        <br>
-        <p>©2024. All rights reserved.</p>
-    </footer>
 </body>
 </html>
