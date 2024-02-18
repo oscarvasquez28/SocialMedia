@@ -16,6 +16,7 @@ body{
     /* font-family: 'Poppins', sans-serif; */
     color:white;
    text-decoration: none;
+
 }
 /* # se utiliza para referenciar el nombre de un id*/
 .header{
@@ -49,10 +50,10 @@ nav{
     display: inline-block;
 }
 
-.nav-right ul li img{
+/* .nav-right ul li img{
     width: 30px;
     margin: 0 15px;
-}
+} */
 
 .nav-user-icon img{
     width: 30px;
@@ -77,8 +78,6 @@ nav{
 .search-box img{
     width: 18px;
 }
-
-
 
 .search-box input{
     width: 100%;
@@ -118,6 +117,10 @@ nav{
     top: 100px;
     align-self: flex-start;
     /* height: 100vh; */
+
+    /* background: #222222;
+    padding: 20px;
+    border-radius: 4px; */
 }
 
 .right-sidebar{
@@ -127,6 +130,123 @@ nav{
     top: 70px;
     align-self: flex-start;
     /* height: 100vh; */
+    background: #222222;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+/*Para en la parte de eventos intercambiar entre See All y Close*/
+.sidebar-title-SeeAll{
+    display: none;
+}
+
+.sidebar-title-SeeAll-Active{
+    display: inline;
+}
+
+.sidebar-title-Close{
+    display: inline;
+}
+
+.sidebar-title-Close-Inactive{
+    display: none;
+}
+
+/*Para en la parte de advertisement intercambiar entre Close y Show*/
+.sidebar-title-closeAd{
+    display: inline;
+}
+
+.sidebar-title-closeAd-Inactive{
+    display: none;
+}
+
+.sidebar-title-showAd{
+    display: none;
+}
+
+.sidebar-title-showAd-Active{
+    display: inline;
+}
+
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sidebar-title h4{
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+.sidebar-title span{
+    color: #1875f2;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.event-all{
+    max-height: 1;
+    display:inline;
+}
+
+.event-all-height{
+  display: none;
+    max-height: 0;
+}
+
+.left-event{
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background: rgb(255, 255, 255);
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+}
+
+.event p{
+    font-size: 12px;
+}
+
+.event a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.right-event h4{
+    color: white;
+}
+
+.sidebar-ads{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 .main-content{
@@ -283,12 +403,169 @@ footer a{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px){
+.post-img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
 
+}
+
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-row{
+    padding: 10px;
+    color: #9a9a9a;
+    cursor: pointer;
+} /*Para darle color a los iconos de editar y eliminar*/
+.post-row i{
+    padding-left: 10px;
+} /*Para separar los iconos de editar y eliminar*/
+
+.activity-icons div img{
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.post-profile-icon img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0 20px;
+    font-size: 13px;
+    
+}
+
+.settings-menu{
+    position:absolute;
+    width: 90%;
+    max-width: 350px;
+    /* height: 500px; */
+    background: #2c2c2c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 5%;
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+
+/* .settings-post{
+    position:absolute;
+    width: 90%;
+    max-width: 200px;
+  
+    background: #2c2c2c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+
+    margin-top: 120px;
+    right: 30%;
+    max-height: 110px;
+    transition: max-height 0.3s;
+} */
+
+.settings-menu-height{
+    max-height: 450px;
+}
+
+/* .settings-post-height{
+    max-height: 0;
+} */
+
+/*Así está por default */
+.advertisement{
+    max-height: 1;
+}
+ /*Aquí escondemos anuncio*/
+.advertisement-height{
+    max-height: 0;
+    display: none;
+}
+
+.user-profile a{
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+}
+
+
+.settings-menu-inner{
+    padding: 20px;
+
+}
+
+.settings-post-inner{
+    padding: 20px;
+}
+
+.settings-menu hr{
+    /* border: 0; */
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+/* .settings-post hr{
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+} */
+
+.setting-links{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.setting-links .logout-icon{
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.setting-links a{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+
+}
+
+@media only screen and (max-width: 550px){
+    
     #titulo{
         display: none;
     }
-    
+
+}
+@media only screen and (max-width: 768px){
+
+
     .nav-right ul li img{
         margin-left: 15px;
         margin-right: 0px;

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter fake</title>
+    <title>Seek</title>
     <link rel="stylesheet" href="style.css"/>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -21,19 +23,42 @@
                     <img src="img/search.png">
                     <input type="text" placeholder="Search">
                 </div>
-                <ul>
+                <!-- <ul>
                     <li><a href="configuracion.html"><img src="img/setting.png"></a></li>
                     <li><img src="img/logout.png"></li>
-                </ul>
-                <div class="nav-user-icon online">
-                    <a href="perfil.html"><img src="img/profile.png"></a>
+                </ul> -->
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="img/profile.png">
                 </div>
 
             </div>
+            <!-------------Settings-menu------------>
+            <div class="settings-menu">
+                <div class="settings-menu-inner">
+
+                    <div class="user-profile">
+                        <img src="img/profile.png">
+                        <div>
+                            <p>Oscar Vasquez</p>
+                            <a href="perfil.html">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="setting-links">
+                        <img src="img/logout.png" class="logout-icon">
+                        <a href="configuracion.html">Log out  <img src="img/arrow.png" 
+                            width="10px"></a>
+                    </div>
+                </div>
+                
+            </div>
+
         </nav>
     </header>
 
     <div class="container">
+
+        <!-------------Left-sidebar------------>
         <div class="left-sidebar">
             <div class="secciones">
                 <a href="#" ><img src="img/friends2.png">Amigos</a>
@@ -43,6 +68,8 @@
                 <a href="#">See more</a>
             </div>
         </div>
+
+        <!-------------Main Content------------>
         <div class="main-content">
 
            <div class="write-post-container">
@@ -65,40 +92,170 @@
 
            </div>
            <div class="post-container">
-                <div class="user-profile">
-                    <img src="img/profile.png">
-                    <div>
-                        <p>Oscar Vasquez</p>
-                        <span>February 12 2024, 02:04 am</span>
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile.png">
+                        <div>
+                            <p>Oscar Vasquez</p>
+                            <span>February 14 2024, 02:04 am</span>
+                        </div>
                     </div>
+                    <!-- icono de bootstrap -->
+                    <div class="bootstrap-icons">
+                        <!--<i class="bi bi-three-dots"></i> -->
+                        <i class="bi bi-pencil-fill"></i>
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    
+                    <!-- <div class="settings-post">
+                        <div class="settings-post-inner">
+                        
+                            <div class="setting-links">
+                                <a href="configuracion.html">Edit Post</a>
+
+                            </div>
+                            <div class="setting-links">
+                                <a href="configuracion.html">Delete Post</a>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+
                 </div>
                 <p class="post-text">Subscribe <span>@Dobetoons</span> Youtube Channel <a href="#">#Dobetiktok</a></p>
-           </div>
+                <img src="img/dobetoons.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png">15k</div>
+                        <div><img src="img/comments.png">455</div>
+                        <div><img src="img/share.png">200</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile.png">
+                        <div>
+                            <p>Oscar Vasquez</p>
+                            <span>February 12 2024, 12:04 am</span>
+                        </div>
+                    </div>
+                    <!-- icono de bootstrap -->
+                    <div class="bootstrap-icons">
+                        <!--<i class="bi bi-three-dots"></i> -->
+                        <i class="bi bi-pencil-fill"></i>
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    
+                    <!-- <div class="settings-post">
+                        <div class="settings-post-inner">
+                        
+                            <div class="setting-links">
+                                <a href="configuracion.html">Edit Post</a>
+
+                            </div>
+                            <div class="setting-links">
+                                <a href="configuracion.html">Delete Post</a>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+                </div>
+                <p class="post-text">Help me decide between react or angular for my project <a href="#">#React </a><a href="#">#Angular</a></p>
+                <img src="img/react.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png">120</div>
+                        <div><img src="img/comments.png">45</div>
+                        <div><img src="img/share.png">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile.png">
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-----right-sidebar----->
         <div class="right-sidebar">
-            <p>right-sidebar</p>
-            <br>
-            <p>Artículos</p>
-            <br>
-            <ul>
-                <li><p>Articulo 1</p></li>
-                <li><p>Articulo 2</p>></li>
-            </ul>
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <span class="sidebar-title-SeeAll" onclick="EventAll()">
+                    See All
+                </span>
+                <span class="sidebar-title-Close" onclick="EventAll()">
+                    Close
+                </span>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>29</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Tecate Pal Norte</h4>
+                    <p>Parque Fundidora</p>
+                    <a href="https://www.tecatepalnorte.com/" target="_blank">More Info</a>
+                </div>
+            </div>
+            <div class="event-all">
+                <div class="event">
+                    <div class="left-event">
+                        <h3>12</h3>
+                        <span>April</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Grupo Bronco</h4>
+                        <p>McAllen, Tx, Estados Unidos</p>
+                        <a href="https://www.eventticketscenter.com/grupo-bronco-mcallen-04-12-2024/6088667/t#open" target="_blank">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>19</h3>
+                        <span>September</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Luis Miguel</h4>
+                        <p>Saltillo, Coahuila</p>
+                        <a href="https://funticket.mx/evento/luis-miguel-24-saltillo/" target="_blank">More Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <span class="sidebar-title-closeAd" onclick="AdvertisementHide()">
+                    Close
+                </span>
+                <span class="sidebar-title-showAd" onclick="AdvertisementHide()">
+                    Show
+                </span>
+            </div>
+            <div class="advertisement">
+                <a href="https://www.crunchyroll.com/es/" target="_blank"><img src="img/crunchy.png" class="sidebar-ads"></a>
+            </div>
+
+
         </div>
     </div>
 
-    <section class="Post">
-        <article>
-
-        </article>
-
-    </section>
 
     <footer>
-        <a href="mailto:oscar.vasquezot@uanl.edu.mx">Contáctame aquí</a>
+        <!-- <a href="mailto:oscar.vasquezot@uanl.edu.mx">Contáctame aquí</a> -->
         <!--para poner información de contacto, al seleccionar se puede enviar un correo-->
         <br>
         <p>©2024. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
