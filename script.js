@@ -5,6 +5,7 @@ var SeeAllInactive = document.querySelector(".sidebar-title-SeeAll")
 var CloseActive = document.querySelector(".sidebar-title-Close")
 var CloseAd = document.querySelector(".sidebar-title-closeAd")
 var ShowAd = document.querySelector(".sidebar-title-showAd")
+var EditProfile = document.querySelector(".edit-profile")
 
 function settingsMenuToggle(){
     settingsMenu.classList.toggle("settings-menu-height");
@@ -22,4 +23,7 @@ function EventAll(){
     CloseActive.classList.toggle("sidebar-title-Close-Inactive"); /* Muestra el Close */
 }
 
+function settingsEditProfile(){
+    EditProfile.classList.toggle("edit-profile-height");
+}
 
