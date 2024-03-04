@@ -54,10 +54,26 @@ nav{
     display: inline-block;
 }
 
-/* .nav-right ul li img{
-    width: 30px;
-    margin: 0 15px;
-} */
+.nav-right-button{
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.nav-right-button button{
+    border-radius: 50px;
+    width: 80px;
+    height: 35px;
+    transition: all 0.4s ease;
+    border: none;
+    outline: none;
+    background: transparent;
+    color:white;
+}
+
+.nav-right-button button:hover{
+    background: rgb(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
 
 .nav-user-icon img{
     width: 35px;
@@ -67,6 +83,16 @@ nav{
 
 .nav-user-icon{
     margin-left: 30px;
+}
+
+.nav-right-user-name p{
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.nav-right-user-name{
+    cursor: pointer;
 }
 
 .search-box{
@@ -371,6 +397,35 @@ nav{
 
 }
 
+.filters-selected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.filters-selected button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    margin: 0px 10px;
+    background:transparent;
+    border: none;
+    color: white;
+    pointer-events: none;
+}
+
+
+/* .all-selected button{
+    background: rgb(255, 255, 255, 0.2);
+} */
+
+.section-selected button{
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.date-selected button{
+    background: rgb(255, 255, 255, 0.2);
+}
 
 /* .main-content{
     border-right: 0.5px solid #272727;
@@ -755,29 +810,153 @@ footer{
     transition: max-height 0.3s;
 }
 
-/* .settings-post{
-    position:absolute;
-    width: 90%;
-    max-width: 200px;
-  
-    background: #2c2c2c;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    overflow: hidden;
-
-    margin-top: 120px;
-    right: 30%;
-    max-height: 110px;
-    transition: max-height 0.3s;
-} */
-
 .settings-menu-height{
     max-height: 450px;
 }
 
-/* .settings-post-height{
-    max-height: 0;
-} */
+
+.Advanced-search{
+    position:absolute;
+    width: 90%;
+    max-width: 750px;
+    height: 420px;
+    background: #2c2c2c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 115%;
+    right: 30%;
+    /* max-height: 0; */
+    transition: max-height 0.3s;
+    color: white;
+    padding: 30px;
+    display: none;
+}
+
+.Advanced-search-height{
+    display: inline;
+}
+
+.Advanced-search-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-Advanced-search-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-Advanced-search{
+    width: 40%;
+    height: 40px;
+    border-radius: 40px;
+    background-color:rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin: 20px 20px 30px 20px;
+}
+
+#btn-Advanced-search:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.modal-register-close{
+    position: absolute;
+    justify-content: end;
+    right: 5%;
+}
+
+.modal-register-close i{
+    font-size: 40px;
+}
+
+.modal-register-close button{
+    background: #2c2c2c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+}
+
+.modal-register-close button:hover{
+    transform: scale(1.1);
+}
+
+.Advanced-search-first-row{
+    margin: 20px 30px 20px 30px;
+}
+
+.Advanced-search-second-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Advanced-search-third-row{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 30px 20px 10px 20px;
+}
+
+.Advanced-search-title{
+    margin: 10px 10px 20px 10px;
+}
+
+.Post-date-class{
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #979797;
+    padding: 25px 25px 10px 25px;
+    outline: none;
+}
+
+.Post-date-class[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.Post-date-class[type="date"]::-webkit-calendar-picker-indicator:hover{
+    cursor: pointer;
+}
+
+.Advanced-search-select{
+    padding: 10px 15px;
+    border-radius: 80px;
+    border: none;
+    /* appearance: none; */
+    background: transparent;
+    color: white;
+    min-width: 120px;
+    font-size: 17px;
+    outline: none;
+}
+
+.Advanced-search-select:hover{
+    background: rgb(129, 129, 129, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+
+.Advanced-search-select option{
+    color: white;
+    background: #222222;
+    /* padding: 10px 10px; */
+    /* min-height: 100px; */
+}
 
 /*Así está por default */
 .advertisement{
@@ -1054,7 +1233,6 @@ padding-right: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
-
     position: fixed; 
     top: 10%;
     right: 25%;
@@ -1150,7 +1328,18 @@ padding-right: 10px;
     justify-content: center;
 }
 
+.edit-work input::-webkit-calendar-picker-indicator{
+ 
+    filter: invert(1);
+    border-radius: 50%;
+    padding: 4px;
+    
+}
 
+.edit-work input::-webkit-calendar-picker-indicator:hover{
+    cursor: pointer;
+    
+}
 
 .user-info form .edit-details input{
     width: 40%;
@@ -1183,11 +1372,25 @@ padding-right: 10px;
     
 }
 
+.btn-edit-profile{
+    border-radius: 50px;
+    width: 100px;
+    height: 35px;
+    transition: all 0.4s ease;
+    border: none;
+    outline: none;
+}
+
+
 .Edit-profile-button div{
     padding: 10px 10px 2px 20px;
 }
 
 .Edit-profile-button button:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.Edit-profile-button input:hover{
     background-color: rgb(255, 255, 255, 0.5);
 }
 
@@ -1198,7 +1401,7 @@ padding-right: 10px;
     margin-top: 15px;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 635px){
     
     #titulo{
         display: none;
@@ -1220,6 +1423,14 @@ padding-right: 10px;
     section{
         width: 95%;
         margin-top: 50px;
+    }
+
+    .nav-right-button{
+        display: none;
+    }
+
+    .Advanced-search{
+        display: none;
     }
 
 }

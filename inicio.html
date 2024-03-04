@@ -23,6 +23,9 @@
             </div>
             
             <div class="nav-right">
+                <div class="nav-right-button" onclick="ShowAdvancedSearch()">
+                    <button><i class="bi bi-caret-down"></i></button>
+                </div>
                 <div class="search-box">
                     <img src="img/search.png">
                     <input type="text" placeholder="Search">
@@ -34,7 +37,9 @@
                 <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                     <img src="img/profile.png">
                 </div>
-
+                <div class="nav-right-user-name" onclick="settingsMenuToggle()">
+                    <p>Oscar</p>
+                </div>
             </div>
             <!-------------Settings-menu------------>
             <div class="settings-menu">
@@ -57,6 +62,54 @@
                 
             </div>
 
+            <!-- ---- Advanced Search ----- -->
+            <div class="Advanced-search">
+                <form>
+                    <div class="Advanced-search-title">
+                        <div>
+                            <h2>Advanced Search</h2>
+                        </div>
+                        <div class="modal-register-close"  >
+                            <button onclick="ShowAdvancedSearch()"><i class="bi bi-x-circle-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="Advanced-search-first-row">
+                        <div>
+                            <textarea class="textarea-post" rows="2" placeholder="Search"></textarea>
+                        </div>      
+                    </div>
+                    <div class="Advanced-search-second-row">
+                        <div>
+                            <div>
+                                <label for="Start-date">Start date</label>
+                                <input class="Post-date-class" type="date" id="Start-date" value="2024-02-29">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <label for="Finish-date">Finish date</label>
+                                    <input class="Post-date-class" type="date" id="Finish-date" value="2024-03-03">
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Advanced-search-third-row">
+                        <div class="list-box-section">
+                            <select class="Advanced-search-select" name="select">
+                                <option value="value1"selected>Section </option>
+                                <option value="value2">Friends</option>
+                                <option value="value3">Entertainment</option>
+                                <option value="value4">Sales</option>
+                                <option value="value5">News</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-Advanced-search-center">
+                        <input type="submit" name="" value="Search"id="btn-Advanced-search">
+                    </div>
+                </form>
+            </div>
         </nav>
     </header>
 
@@ -111,7 +164,17 @@
 
         <!-------------Main Content------------>
         <div class="main-content">
-
+            <div class="filters-selected">
+                <div class="all-selected">
+                    <button>All</button>
+                </div>
+                <div class="section-selected">
+                    <button>Friends</button>
+                </div>
+                <div class="date-selected">
+                    <button>Last 3 days</button>
+                </div>
+            </div>
             <div class="write-post-container">
                 <div class="user-profile">
                     <a href="perfil.html"><img src="img/profile.png"></a>

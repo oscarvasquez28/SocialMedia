@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seek</title>
     <link rel="stylesheet" href="stylelog.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div class="contenido">
@@ -16,19 +17,19 @@
                 <!-- method="post" -->
                 <h1>Log in</h1>
                 <div class="inputbox">
-                    <input type="email" autofocus required>
-                    <label for="">Email</label>
+                    <input type="text" id="Username-Login" autofocus required>
+                    <label for="Username-Login">Username</label>
                 </div>
                 <div class="inputbox">
-                    <input type="password" required>
-                    <label for="">Password</label>
+                    <input type="password" id="Password-Login" required>
+                    <label for="Password-Login">Password</label>
                 </div>
-                <div class="forget">
+                <!-- <div class="forget">
                     <label for="" >
                         <input type="checkbox">Remember me
                     </label>
                     <a href="#">Forget Password</a>
-                </div>
+                </div> -->
 
                 <input type="submit" name="" value="Log In"id="btn">
 
@@ -38,11 +39,98 @@
                 
                 <div class="register">
                     <p>Don't have an Account
-                        <a href="">Register</a>
+                        <span onclick="ShowModalRegister()">Register</span> 
                     </p>
                 </div>
             </form>
         </section>
     </div>
+    <container class="modal-register">
+        <form>
+            <div class="register-title">
+                <div>
+                    <h1>Create Account</h1>
+                </div>
+                <div class="modal-register-close"  >
+                    <button onclick="ShowModalRegister()"><i class="bi bi-x-circle-fill"></i></button>
+                </div>
+                
+            </div>
+            <div class="user-data">
+                <div class="first-column">
+                    <div class="inputbox">
+                        <div>
+                            <label for="First-name">First Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="First-name">
+                        </div>
+                        
+                    </div>
+                    <div class="inputbox">
+                        <div>
+                            <label for="Username">Username</label>
+                        </div>
+                        <div>
+                            <input type="text" id="Username">
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <div>
+                            <label for="Email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" id="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="inputbox">
+                        <div>
+                            <label for="Last-name">Last Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="Last-name">
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <div>
+                            <label for="Birthdate">Birthdate</label>
+                        </div>
+                        <div class="inputbox-label-birthdate">
+                            <input class="Birthdate-class" type="date" id="Birthdate" value="2024-02-29">
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <div>
+                            <label for="Password">Password</label>
+                        </div>
+                        <div>
+                            <input type="password" id="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="third-column">
+                    <div class="third-column-center-one">
+                        <input type="file" name="profile-file" id="file" class="register-file" accept="image/*"/>
+                        <label for="file">+</label>
+                        <i class="bi bi-person-circle"></i>
+
+                    </div>
+                    <div class="third-column-center-two">
+                        <p>Load Image</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="btn-register-center">
+                <input type="submit" name="" value="Register"id="btn-register">
+            </div>
+            
+
+        </form>
+    </container>
+    <script src="script.js"></script>
 </body>
 </html>

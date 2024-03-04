@@ -6,6 +6,8 @@ var CloseActive = document.querySelector(".sidebar-title-Close")
 var CloseAd = document.querySelector(".sidebar-title-closeAd")
 var ShowAd = document.querySelector(".sidebar-title-showAd")
 var EditProfile = document.querySelector(".edit-profile")
+var RegisterModal = document.querySelector(".modal-register")
+var AdvancedSearch = document.querySelector(".Advanced-search")
 
 function settingsMenuToggle(){
     settingsMenu.classList.toggle("settings-menu-height");
@@ -27,3 +29,10 @@ function settingsEditProfile(){
     EditProfile.classList.toggle("edit-profile-height");
 }
 
+function ShowModalRegister(){
+    RegisterModal.classList.toggle("modal-register-height");
+}
+
+function ShowAdvancedSearch(){
+    AdvancedSearch.classList.toggle("Advanced-search-height");
+}
