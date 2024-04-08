@@ -145,14 +145,22 @@ nav{
 .left-sidebar{
     /* background: #c5c5c5; */
     flex-basis: 25%;
-    position: sticky; /*para que esté fijo y no haga scroll */
+    position: sticky; 
+    /*para que esté fijo y no haga scroll */
     top: 50px;
     align-self: flex-start;
-    /* height: 100vh; */
-
+    height: calc(100vh - 80px)
     /* background: #222222;
     padding: 20px;
     border-radius: 4px; */
+}
+
+#carouselExample{
+    height: 370px;
+}
+
+.carousel-inner{
+    height: 370px;
 }
 
 .Galeria-Texto{
@@ -177,7 +185,7 @@ nav{
     color: white;
     width: fit-content;
     /* margin: 10px 10px 10px 0; */
-    margin: 5px 10px 10px 5px;
+    margin: 0px 10px 0px 5px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -418,6 +426,7 @@ nav{
 /* .all-selected button{
     background: rgb(255, 255, 255, 0.2);
 } */
+
 
 .section-selected button{
     background: rgb(255, 255, 255, 0.2);
@@ -1400,6 +1409,29 @@ padding-right: 10px;
     justify-content:flex-end;
     margin-top: 15px;
 }
+
+
+.all-selected{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-number button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    margin: 0px 10px;
+    background:transparent;
+    border: none;
+    color: white;
+}
+
+.all-selected-indice{
+    margin: 0;
+}
+
 
 @media only screen and (max-width: 635px){
     

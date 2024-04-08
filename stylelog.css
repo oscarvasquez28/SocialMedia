@@ -190,7 +190,7 @@ h1{
     right: 25%; */
     /* width: 0%; */
     /* max-width: 700px; */
-    width: 900px;
+    width: 70%;
     height: 600px;
     /* background-color: transparent; */
     background-color: black;
@@ -204,7 +204,7 @@ h1{
     color: white;
     /* position: fixed;  */
     top: 10%;
-    right: 20%;
+    right: 15%;
     
     transition: max-height 0.3s;
 
@@ -241,10 +241,25 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 30px;
+    height: 400px;
 }
+
+/* .user-data div{
+    height: 100%;
+} */
 
 .first-column, .second-column, .third-column{
     padding: 20px 40px 20px 40px;
+    height: 100%;
+    
+}
+
+.third-column-second-row, .third-column-third-row{
+    text-align: center;
+}
+
+.third-column-third-row{
+    padding-top: 20px;
 }
 
 .user-data input{
@@ -361,17 +376,17 @@ h1{
     pointer-events: none;
 }
 
-.third-column div{
+/* .third-column div{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 5px 10px 5px;
-}
+} */
 
-.third-column-center p{
+/* .third-column-center p{
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* @media only screen and (max-width: 768px){ */
 @media only screen and (max-width: 900px){
