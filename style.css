@@ -156,7 +156,8 @@ nav{
 }
 
 #carouselExample{
-    height: 370px;
+    height: 360px;
+    margin-top: 10px;
 }
 
 .carousel-inner{
@@ -222,10 +223,10 @@ nav{
     color: #1876f2;
 } */
 
-.secciones{
+/* .secciones{
     border-bottom: 0.5px solid #272727;
     
-}
+} */
 
 /* .img-box{
     display: flex;

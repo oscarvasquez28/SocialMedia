@@ -191,7 +191,7 @@ h1{
     /* width: 0%; */
     /* max-width: 700px; */
     width: 70%;
-    height: 600px;
+    height: 630px;
     /* background-color: transparent; */
     background-color: black;
 
@@ -203,13 +203,13 @@ h1{
     overflow: hidden;
     color: white;
     /* position: fixed;  */
-    top: 10%;
+    top: 8%;
     right: 15%;
     
     transition: max-height 0.3s;
 
     max-height: 1;
-    padding: 32px 48px;
+    padding: 32px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     display: none;
 }
@@ -241,7 +241,7 @@ h1{
     align-items: center;
     justify-content: center;
     padding: 30px;
-    height: 400px;
+    height: 450px;
 }
 
 /* .user-data div{
@@ -301,7 +301,7 @@ h1{
     font-size: 1rem;
     font-weight: 600;
     transition: all 0.4s ease;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 20px;
 }
 
 #btn-register:hover{
